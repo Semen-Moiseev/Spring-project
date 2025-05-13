@@ -15,7 +15,7 @@ public class UserController {
 
     public UserController(UserService userService) {
         this.userService = userService;
-    }
+    } // Конструктор
 
     @GetMapping("/balance")
     public BalanceResponse getBalance(@AuthenticationPrincipal User user) {

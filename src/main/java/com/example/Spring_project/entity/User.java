@@ -1,9 +1,7 @@
 package com.example.Spring_project.entity;
 
 import jakarta.persistence.*;
-import org.hibernate.annotations.CreationTimestamp;
-import java.time.LocalDateTime;
-import java.util.List;
+import java.math.BigDecimal;
 
 @Entity
 @Table(name = "users")
@@ -19,28 +17,12 @@ public class User {
     private String password; // Хэш пароля
 
     @Column(name = "balance", nullable = false)
-    private int balance = 1000; // Начальный баланс 1000 руб
-
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    private List<Transaction> transactions;
-
-    @CreationTimestamp
-    private LocalDateTime createdAt;
+    private BigDecimal balance = BigDecimal.valueOf(1000.00); // Начальный баланс 1000.00 руб
 
     public String getPhoneNumber() { return phoneNumber; }
-    public void setPhoneNumber(String newNumberPhone) {
-        phoneNumber = newNumberPhone;
-    }
-    public String getPassword() {
-        return password;
-    }
-    public void setPassword(String newPassword) {
-        password = newPassword;
-    }
-    public int getBalance() {
-        return balance;
-    }
-    public void setBalance(int newBalance) {
-        balance = newBalance;
-    }
+    public void setPhoneNumber(String newNumberPhone) { phoneNumber = newNumberPhone; }
+    public String getPassword() { return password; }
+    public void setPassword(String newPassword) { password = newPassword; }
+    public BigDecimal getBalance() { return balance; }
+    public void setBalance(BigDecimal newBalance) { balance = newBalance; }
 }

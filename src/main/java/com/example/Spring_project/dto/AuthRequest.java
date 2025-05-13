@@ -9,10 +9,7 @@ public class AuthRequest {
     @NotBlank(message = "Требуется ввести пароль")
     private String password;
 
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
+    public String getPhoneNumber() { return phoneNumber; }
     public String getPassword() {
         return password;
     }

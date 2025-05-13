@@ -16,7 +16,7 @@ public class AuthController {
 
     public AuthController(UserService userService) {
         this.userService = userService;
-    }
+    } // Конструктор
 
     @PostMapping("/register")
     public ResponseEntity<User> register(@RequestBody AuthRequest authRequest) {

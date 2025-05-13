@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 public class UserDetailsServiceImpl implements UserDetailsService {
     private final UserRepository userRepository;
 
-    public UserDetailsServiceImpl(UserRepository userRepository) {
+    public UserDetailsServiceImpl(UserRepository userRepository) { // Конструктор
         this.userRepository = userRepository;
     }
 
@@ -22,7 +22,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         return org.springframework.security.core.userdetails.User
                 .withUsername(user.getPhoneNumber())
                 .password(user.getPassword())
-                .authorities("USER")
                 .build();
     }
 }
