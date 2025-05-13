@@ -2,10 +2,12 @@ package com.example.Spring_project.security;
 
 import com.example.Spring_project.entity.User;
 import com.example.Spring_project.repository.UserRepository;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import java.util.Collections;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
@@ -15,13 +17,15 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         this.userRepository = userRepository;
     }
 
+    @Override
     public UserDetails loadUserByUsername(String phoneNumber) throws UsernameNotFoundException {
         User user = userRepository.findByPhoneNumber(phoneNumber)
                 .orElseThrow(() -> new UsernameNotFoundException("Пользователь не найден"));
 
-        return org.springframework.security.core.userdetails.User
-                .withUsername(user.getPhoneNumber())
-                .password(user.getPassword())
-                .build();
+        return new org.springframework.security.core.userdetails.User(
+                user.getPhoneNumber(),
+                user.getPassword(),
+                Collections.singletonList(new SimpleGrantedAuthority("USER"))
+        );
     }
 }
