@@ -35,6 +35,7 @@ public class User {
 
     public enum Gender { MAN, WOMAN }
 
+    public int getId() { return id; }
     public String getPhoneNumber() { return phoneNumber; }
     public void setPhoneNumber(String newNumberPhone) { phoneNumber = newNumberPhone; }
     public String getPassword() { return password; }

@@ -3,6 +3,7 @@ package com.example.Spring_project.controller;
 import com.example.Spring_project.dto.AuthRequest;
 import com.example.Spring_project.entity.User;
 import com.example.Spring_project.service.UserService;
+import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -19,7 +20,7 @@ public class AuthController {
     } // Конструктор
 
     @PostMapping("/register")
-    public ResponseEntity<User> register(@RequestBody AuthRequest authRequest) {
+    public ResponseEntity<User> register(@RequestBody @Valid AuthRequest authRequest) {
         return ResponseEntity.ok(userService.registerUser(authRequest));
     }
 }
