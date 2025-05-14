@@ -35,4 +35,12 @@ public class UserController {
         User updatedUser = userService.updateUser(user, request);
         return ResponseEntity.ok(updatedUser);
     }
+
+    @GetMapping("/me")
+    public ResponseEntity<User> getCurrentUser(
+            Authentication authentication) {
+        String phoneNumber = authentication.getName();
+        User user = userService.findByPhoneNumber(phoneNumber);
+        return ResponseEntity.ok(user);
+    }
 }

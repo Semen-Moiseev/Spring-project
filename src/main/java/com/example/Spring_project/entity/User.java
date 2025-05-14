@@ -42,8 +42,12 @@ public class User {
     public void setPassword(String newPassword) { password = newPassword; }
     public BigDecimal getBalance() { return balance; }
     public void setBalance(BigDecimal newBalance) { balance = newBalance; }
+    public String getFullName() { return fullName; }
     public void setFullName(String newFullName) { fullName = newFullName; }
+    public String getEmail() { return email; }
     public void setEmail(String newEmail) { email = newEmail; }
+    public Gender getGender() { return gender; }
     public void setGender(Gender newGender) { gender = newGender; }
+    public LocalDate getBirthDate() { return birthDate; }
     public void setBirthDate(LocalDate newBirthDate) { birthDate = newBirthDate; }
 }
