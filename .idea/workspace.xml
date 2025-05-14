@@ -6,12 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="43d166d8-5d0c-461f-989f-4fdf85f677eb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/controller/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/dto/BalanceResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/dto/BalanceResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/dto/PaymentRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/dto/PaymentRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/dto/PaymentResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/dto/PaymentResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/entity/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/entity/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/service/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/service/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/dto/AuthRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/dto/AuthRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -30,6 +30,10 @@ public class UserService {
         user.setPhoneNumber(authRequest.getPhoneNumber());
         user.setPassword(passwordEncoder.encode(authRequest.getPassword()));
         user.setBalance(BigDecimal.valueOf(1000.00)); // Начальный баланс 1000 руб
+        user.setFullName(authRequest.getFullName());
+        user.setEmail(authRequest.getEmail());
+        user.setGender(authRequest.getGender());
+        user.setBirthDate(authRequest.getBirthDate());
 
         return userRepository.save(user);
     }
