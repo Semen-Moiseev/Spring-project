@@ -20,15 +20,7 @@ public class Transaction {
     @Column(name = "amount", nullable = false)
     private BigDecimal amount;
 
-    public void setUser(User sender) {
-        user = sender;
-    }
-
-    public void setAmount(BigDecimal amo) {
-        amount = amo;
-    }
-
-    public void setRecipientPhone(String recipientPh) {
-        recipientPhone = recipientPh;
-    }
+    public void setUser(User sender) { user = sender; }
+    public void setAmount(BigDecimal quantity) { amount = quantity; }
+    public void setRecipientPhone(String phone) { recipientPhone = phone; }
 }

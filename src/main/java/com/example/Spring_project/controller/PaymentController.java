@@ -3,8 +3,6 @@ package com.example.Spring_project.controller;
 import com.example.Spring_project.dto.PaymentRequest;
 import com.example.Spring_project.dto.PaymentResponse;
 import com.example.Spring_project.entity.User;
-import com.example.Spring_project.repository.TransactionRepository;
-import com.example.Spring_project.repository.UserRepository;
 import com.example.Spring_project.service.PaymentService;
 import com.example.Spring_project.service.UserService;
 import org.springframework.http.MediaType;

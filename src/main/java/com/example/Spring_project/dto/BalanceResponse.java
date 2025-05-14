@@ -1,12 +1,11 @@
 package com.example.Spring_project.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.math.BigDecimal;
 
 public class BalanceResponse {
-    @JsonProperty("phone_number")
+    @JsonFormat(shape = JsonFormat.Shape.STRING)
     private String phoneNumber;
     @JsonFormat(shape = JsonFormat.Shape.STRING)
     private BigDecimal balance;

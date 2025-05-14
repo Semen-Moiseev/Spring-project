@@ -21,29 +21,25 @@ public class PaymentService {
     }
 
     @Transactional
-    public PaymentResponse processPayment(User sender, PaymentRequest request) {
+    public PaymentResponse processPayment(User sender, PaymentRequest request) { // Оплата
         PaymentResponse response = new PaymentResponse();
 
-        // Проверяем достаточно ли средств
-        if (sender.getBalance().compareTo(request.getAmount()) < 0) {
+        if (sender.getBalance().compareTo(request.getAmount()) < 0) { // Недостаточно средств
             response.setSuccess(false);
             response.setMessage("Недостаточно средств на счете");
             return response;
         }
 
-        // Списываем средства
-        sender.setBalance(sender.getBalance().subtract(request.getAmount()));
+        sender.setBalance(sender.getBalance().subtract(request.getAmount())); // Списываем средства
         userRepository.save(sender);
 
-        // Сохраняем транзакцию
-        Transaction transaction = new Transaction();
+        Transaction transaction = new Transaction(); // Сохраняем транзакцию
         transaction.setUser(sender);
         transaction.setRecipientPhone(request.getRecipientPhone());
         transaction.setAmount(request.getAmount());
         transactionRepository.save(transaction);
 
-        // Формируем ответ
-        response.setSuccess(true);
+        response.setSuccess(true); // Формируем ответ
         response.setMessage("Оплата успешно выполнена");
         response.setAmount(request.getAmount());
         response.setRemainingBalance(sender.getBalance());
