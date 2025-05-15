@@ -11,7 +11,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
-@EnableWebSecurity
+@EnableWebSecurity // Активирует механизм безопасности Spring
 public class SecurityConfig {
     private final UserDetailsServiceImpl userDetailsServiceImpl;
 
@@ -24,10 +24,10 @@ public class SecurityConfig {
         http
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/auth/**").permitAll()
-                        .requestMatchers("/api/payment/**").authenticated()
+                        .requestMatchers("/api/auth/**").permitAll() // Публичный эндпоинт
+                        .requestMatchers("/api/payment/**").authenticated() // Эндпоинт для авторизованных ...
                         .requestMatchers("/api/users/me").authenticated()
-                        .requestMatchers("/api/transactions/**").authenticated()
+                        .requestMatchers("/api/transactions/**").authenticated() // ...
                         .anyRequest().authenticated()
                 )
                 .httpBasic(Customizer.withDefaults())

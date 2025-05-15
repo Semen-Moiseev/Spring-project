@@ -5,15 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43d166d8-5d0c-461f-989f-4fdf85f677eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/controller/TransactionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/dto/TransactionDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/service/TransactionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/Spring_project/entity/TransactionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/Spring_project/entity/UserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/Spring_project/service/TransactionServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/Spring_project/service/UserServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/controller/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/controller/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/controller/TransactionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/dto/AuthRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/dto/AuthRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/dto/BalanceResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/dto/BalanceResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/dto/PaymentRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/dto/PaymentRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/dto/PaymentResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/dto/PaymentResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/dto/TransactionDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/dto/TransactionResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/dto/UpdateUserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/dto/UpdateUserRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/entity/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/entity/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/repository/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/repository/TransactionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/security/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/security/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/service/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Spring_project/service/TransactionService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,13 +94,13 @@
       <recent name="com.example.Spring_project" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.SpringProjectApplication">
     <configuration name="SpringProjectApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.Spring_project.SpringProjectApplication" />
       <module name="Spring-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.Spring_project.entity.*" />
+          <option name="PATTERN" value="com.example.Spring_project.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,9 +108,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TransactionServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.Spring_project.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.Spring_project.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.Spring_project.service.TransactionServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionServiceTest.getUserTransactions_shouldReturnPaginatedResults" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.Spring_project.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.Spring_project.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.Spring_project.service.TransactionServiceTest" />
+      <option name="METHOD_NAME" value="getUserTransactions_shouldReturnPaginatedResults" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionTest.transactionCreation_shouldSetAllFields" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.Spring_project.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.Spring_project.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.example.Spring_project.entity.TransactionTest" />
+      <option name="METHOD_NAME" value="transactionCreation_shouldSetAllFields" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.userCreation_shouldSetBasicFields" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.Spring_project.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.Spring_project.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.example.Spring_project.entity.UserTest" />
+      <option name="METHOD_NAME" value="userCreation_shouldSetBasicFields" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.SpringProjectApplication" />
+        <item itemvalue="JUnit.TransactionServiceTest" />
+        <item itemvalue="JUnit.TransactionServiceTest.getUserTransactions_shouldReturnPaginatedResults" />
+        <item itemvalue="JUnit.TransactionTest.transactionCreation_shouldSetAllFields" />
+        <item itemvalue="JUnit.UserTest.userCreation_shouldSetBasicFields" />
       </list>
     </recent_temporary>
   </component>

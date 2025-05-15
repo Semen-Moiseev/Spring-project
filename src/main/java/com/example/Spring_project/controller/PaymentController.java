@@ -25,7 +25,7 @@ public class PaymentController {
         this.userService = userService;
     }
 
-    @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)  //POST-запрос, возврат данных ы формате JSON
     public ResponseEntity<PaymentResponse> makePayment(
             Authentication authentication,
             @RequestBody @Valid PaymentRequest request) {

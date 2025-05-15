@@ -11,16 +11,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/auth")
+@RequestMapping("/api/auth") //Базовый URL для всех методов контроллера
 public class AuthController {
     private final UserService userService;
 
-    public AuthController(UserService userService) {
-        this.userService = userService;
-    } // Конструктор
+    public AuthController(UserService userService) { this.userService = userService; } // Конструктор
 
-    @PostMapping("/register")
-    public ResponseEntity<User> register(@RequestBody @Valid AuthRequest authRequest) {
+    @PostMapping("/register") //POST-запрос с указанием URL
+    public ResponseEntity<User> register(@RequestBody @Valid AuthRequest authRequest) { //Преобразует тело HTTP-запроса (JSON/XML) в Java-объект / Активирует валидацию
         return ResponseEntity.ok(userService.registerUser(authRequest));
     }
 }

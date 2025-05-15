@@ -11,7 +11,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "phoneNumber", nullable = false, unique = true)
+    @Column(name = "phoneNumber", nullable = false, unique = true) //Колонка с названием, не null
     private String phoneNumber; // Логин - номер телефона
 
     @Column(name = "password", nullable = false)
@@ -27,7 +27,7 @@ public class User {
     private String email;
 
     @Column(name = "gender", nullable = false)
-    @Enumerated(EnumType.STRING)
+    @Enumerated(EnumType.STRING) // Значение перечисления сохраняется в БД как строка
     private Gender gender;
 
     @Column(name = "birthDate", nullable = false)
@@ -36,6 +36,7 @@ public class User {
     public enum Gender { MAN, WOMAN }
 
     public int getId() { return id; }
+    public void setId(int userId) { id = userId; }
     public String getPhoneNumber() { return phoneNumber; }
     public void setPhoneNumber(String newNumberPhone) { phoneNumber = newNumberPhone; }
     public String getPassword() { return password; }

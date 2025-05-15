@@ -5,12 +5,15 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 public class PaymentResponse {
-    @JsonFormat(shape = JsonFormat.Shape.STRING)
+    @JsonFormat(shape = JsonFormat.Shape.STRING) // Формат данных
     private boolean success;
+
     @JsonFormat(shape = JsonFormat.Shape.STRING)
     private String message;
+
     @JsonFormat(shape = JsonFormat.Shape.STRING)
     private BigDecimal amount;
+
     @JsonFormat(shape = JsonFormat.Shape.STRING)
     private BigDecimal remainingBalance;
 
