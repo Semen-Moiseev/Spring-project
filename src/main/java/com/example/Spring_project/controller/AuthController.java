@@ -17,7 +17,7 @@ public class AuthController {
 
     public AuthController(UserService userService) { this.userService = userService; } // Конструктор
 
-    @PostMapping("/register") //POST-запрос с указанием URL
+    @PostMapping("/register") //POST-запрос с указанием URL (Регистрация пользователя)
     public ResponseEntity<User> register(@RequestBody @Valid AuthRequest authRequest) { //Преобразует тело HTTP-запроса (JSON/XML) в Java-объект / Активирует валидацию
         return ResponseEntity.ok(userService.registerUser(authRequest));
     }

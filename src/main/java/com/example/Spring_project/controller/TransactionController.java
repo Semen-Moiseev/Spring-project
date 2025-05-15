@@ -27,7 +27,7 @@ public class TransactionController {
         this.userService = userService;
     }
 
-    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE) //GET-запрос, возврат данных ы формате JSON
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE) //GET-запрос, возврат данных ы формате JSON (Вывод список транзакций)
     public ResponseEntity<Page<TransactionResponse>> getTransactions(
             Authentication authentication,
             @RequestParam(defaultValue = "0") int page, //Параметры для пагинации и их базовые значения

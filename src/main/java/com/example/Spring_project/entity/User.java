@@ -1,9 +1,11 @@
 package com.example.Spring_project.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+@Data
 @Entity
 @Table(name = "users")
 public class User {
@@ -34,21 +36,4 @@ public class User {
     private LocalDate birthDate;
 
     public enum Gender { MAN, WOMAN }
-
-    public int getId() { return id; }
-    public void setId(int userId) { id = userId; }
-    public String getPhoneNumber() { return phoneNumber; }
-    public void setPhoneNumber(String newNumberPhone) { phoneNumber = newNumberPhone; }
-    public String getPassword() { return password; }
-    public void setPassword(String newPassword) { password = newPassword; }
-    public BigDecimal getBalance() { return balance; }
-    public void setBalance(BigDecimal newBalance) { balance = newBalance; }
-    public String getFullName() { return fullName; }
-    public void setFullName(String newFullName) { fullName = newFullName; }
-    public String getEmail() { return email; }
-    public void setEmail(String newEmail) { email = newEmail; }
-    public Gender getGender() { return gender; }
-    public void setGender(Gender newGender) { gender = newGender; }
-    public LocalDate getBirthDate() { return birthDate; }
-    public void setBirthDate(LocalDate newBirthDate) { birthDate = newBirthDate; }
 }

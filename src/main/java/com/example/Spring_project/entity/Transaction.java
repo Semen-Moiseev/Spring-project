@@ -1,9 +1,11 @@
 package com.example.Spring_project.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+@Data
 @Entity //Сущность
 @Table(name = "transactions") // Имя таблицы БД
 public class Transaction {
@@ -23,15 +25,4 @@ public class Transaction {
 
     @Column(name = "timestamp", nullable = false)
     private LocalDateTime timestamp = LocalDateTime.now();
-
-    public int getId() { return id; }
-    public void setId(int i) { id = i; }
-    public User getUser() { return user; }
-    public void setUser(User sender) { user = sender; }
-    public String getRecipientPhone() { return recipientPhone; }
-    public void setRecipientPhone(String phone) { recipientPhone = phone; }
-    public BigDecimal getAmount() { return amount; }
-    public void setAmount(BigDecimal quantity) { amount = quantity; }
-    public LocalDateTime getTimestamp() { return timestamp; }
-    public void setTimestamp(LocalDateTime newTimestamp) { timestamp = newTimestamp; }
 }

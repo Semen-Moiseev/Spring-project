@@ -1,1 +1,5 @@
 com\example\Spring_project\SpringProjectApplicationTests.class
+com\example\Spring_project\service\TransactionServiceTest.class
+com\example\Spring_project\service\UserServiceTest.class
+com\example\Spring_project\entity\TransactionTest.class
+com\example\Spring_project\entity\UserTest.class

@@ -17,14 +17,14 @@ public class UserController {
 
     public UserController(UserService userService) { this.userService = userService; } // Конструктор
 
-    @GetMapping(value = "/balance", produces = MediaType.APPLICATION_JSON_VALUE)  //GET-запрос с указанием URL, возврат данных ы формате JSON
+    @GetMapping(value = "/balance", produces = MediaType.APPLICATION_JSON_VALUE)  //GET-запрос с указанием URL, возврат данных ы формате JSON (Вывод баланса)
     public ResponseEntity<BalanceResponse> getBalance(Authentication authentication) {
         String phoneNumber = authentication.getName();
         User user = userService.findByPhoneNumber(phoneNumber);
         return ResponseEntity.ok(userService.getBalance(user));
     }
 
-    @PatchMapping("/me") //PATCH-запрос с указанием URL
+    @PatchMapping("/me") //PATCH-запрос с указанием URL (Обновление данных пользователя)
     public ResponseEntity<User> updateCurrentUser(
             Authentication authentication,
             @RequestBody @Valid UpdateUserRequest request) {
@@ -36,7 +36,7 @@ public class UserController {
         return ResponseEntity.ok(updatedUser);
     }
 
-    @GetMapping("/me") //GET-запрос с указанием URL
+    @GetMapping("/me") //GET-запрос с указанием URL (Вывод данных пользователя)
     public ResponseEntity<User> getCurrentUser(
             Authentication authentication) {
         String phoneNumber = authentication.getName();

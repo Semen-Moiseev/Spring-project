@@ -5,8 +5,10 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Past;
 import jakarta.validation.constraints.Size;
+import lombok.Data;
 import java.time.LocalDate;
 
+@Data
 public class UpdateUserRequest {
     @NotBlank(message = "Требуется ввести полное имя") // Проверка на пустую строку
     @Size(max = 100, message = "ФИО не должно превышать 100 символов") // Проверка на размер строки
@@ -20,10 +22,4 @@ public class UpdateUserRequest {
 
     @Past(message = "Дата рождения должна быть в прошлом") // Проверка даты на отношение к прошлому
     private LocalDate birthDate;
-
-    public String getFullName() { return fullName; }
-    public void setFullName(String newName) { fullName = newName; }
-    public String getEmail() { return email; }
-    public User.Gender getGender() { return gender; }
-    public LocalDate getBirthDate() { return birthDate; }
 }
