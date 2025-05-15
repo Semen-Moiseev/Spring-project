@@ -28,4 +28,12 @@ public class Transaction {
     public void setAmount(BigDecimal quantity) { amount = quantity; }
     public void setRecipientPhone(String phone) { recipientPhone = phone; }
     public void setTimestamp(LocalDateTime newTimestamp) { timestamp = newTimestamp; }
+
+    public int getId() { return id; }
+
+    public String getRecipientPhone() { return recipientPhone; }
+
+    public BigDecimal getAmount() { return amount; }
+
+    public LocalDateTime getTimestamp() { return timestamp; }
 }

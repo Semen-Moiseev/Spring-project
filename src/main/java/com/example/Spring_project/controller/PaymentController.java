@@ -5,6 +5,7 @@ import com.example.Spring_project.dto.PaymentResponse;
 import com.example.Spring_project.entity.User;
 import com.example.Spring_project.service.PaymentService;
 import com.example.Spring_project.service.UserService;
+import jakarta.validation.Valid;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
@@ -27,7 +28,7 @@ public class PaymentController {
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<PaymentResponse> makePayment(
             Authentication authentication,
-            @RequestBody PaymentRequest request) {
+            @RequestBody @Valid PaymentRequest request) {
 
         String phoneNumber = authentication.getName();
         User user = userService.findByPhoneNumber(phoneNumber);

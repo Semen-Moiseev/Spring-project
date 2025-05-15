@@ -27,6 +27,7 @@ public class SecurityConfig {
                         .requestMatchers("/api/auth/**").permitAll()
                         .requestMatchers("/api/payment/**").authenticated()
                         .requestMatchers("/api/users/me").authenticated()
+                        .requestMatchers("/api/transactions/**").authenticated()
                         .anyRequest().authenticated()
                 )
                 .httpBasic(Customizer.withDefaults())
