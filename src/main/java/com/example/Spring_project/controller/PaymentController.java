@@ -31,8 +31,8 @@ public class PaymentController {
 
         String phoneNumber = authentication.getName();
         User user = userService.findByPhoneNumber(phoneNumber);
-        PaymentResponse response = paymentService.processPayment(user, request);
 
+        PaymentResponse response = paymentService.processPayment(user, request);
         return ResponseEntity.ok(response);
     }
 }

@@ -7,8 +7,8 @@ import com.example.Spring_project.entity.User;
 import com.example.Spring_project.repository.TransactionRepository;
 import com.example.Spring_project.repository.UserRepository;
 import jakarta.transaction.Transactional;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import java.time.LocalDateTime;
 
 @Service
 public class PaymentService {
@@ -43,6 +43,7 @@ public class PaymentService {
         response.setMessage("Оплата успешно выполнена");
         response.setAmount(request.getAmount());
         response.setRemainingBalance(sender.getBalance());
+        response.setTimestamp(LocalDateTime.now());
 
         return response;
     }
